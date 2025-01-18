@@ -26,5 +26,10 @@ nvm install node
 nvm alias default node
 ```
 
+# Upgrade to Latest Version of Astro
+```
+npx @astrojs/upgrade
+```
+
 ## reference
 https://docs.astro.build/en/tutorial/1-setup/1/
