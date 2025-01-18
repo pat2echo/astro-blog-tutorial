@@ -1,0 +1,27 @@
+---
+const { title, subtitle } = Astro.props;
+
+import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+const h1Color = "green";
+const fontSize = "2rem";
+---
+
+<html lang="en">
+	<Header />
+	<style define:vars={{h1Color, fontSize}}>
+      h1 {
+        color: var(--h1Color);
+        font-size: var(--fontSize);
+      }
+    </style>
+	<body>
+		<h1>{title}</h1>
+		<h2>{subtitle}</h2>
+        <Navigation />
+		<slot />
+		<Footer />
+	</body>
+</html>
