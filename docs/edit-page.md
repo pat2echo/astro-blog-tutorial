@@ -68,3 +68,4 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
 https://docs.astro.build/en/tutorial/5-astro-api/1/
 
 ## Create pages dynamically
+https://docs.astro.build/en/tutorial/5-astro-api/2/
